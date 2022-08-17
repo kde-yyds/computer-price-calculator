@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>电脑价格计算器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>591</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>114991</number>
+    </property>
+    <property name="value">
+     <number>114514</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>114514</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>651</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>649</width>
+       <height>339</height>
+      </rect>
+     </property>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>581</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>CPU</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>100</y>
+          <width>97</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>计算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>110</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CPU价格               ==</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="cpu_price_label">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>110</y>
+          <width>161</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>GPU</string>
+       </attribute>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>110</y>
+          <width>211</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>显卡价格               ==</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gpu_price_label">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>110</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>110</y>
+          <width>97</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>计算</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>内存</string>
+       </attribute>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>110</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>内存条价格                ==</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="mem_price_label">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>110</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>100</y>
+          <width>97</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>计算</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>硬盘</string>
+       </attribute>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>271</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>硬盘价格                      ==</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="hdd_price_label">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>100</y>
+          <width>161</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>100</y>
+          <width>97</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>计算</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>主板</string>
+       </attribute>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>231</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>主板价格                   ==</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="zb_price_label">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>110</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>100</y>
+          <width>97</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>计算</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>系统</string>
+       </attribute>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>531</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>                              你选择的软件均为免费的自由软件</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>汇总</string>
+       </attribute>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>110</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>购买</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="price_label_0">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>110</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>110</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>元的电脑大约需要</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="price_label_1">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>110</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>110</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>元！</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算：</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>651</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>649</width>
+       <height>109</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>选项：</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>151</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>（选择操作系统）</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Debian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ubuntu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Arch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fedora</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>0</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>GNU/Linux+</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>0</y>
+        <width>151</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>（选择桌面环境）</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>KDE Plasma</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GNOME</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MATE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Xfce4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LXDE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LXQT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>i3-wm</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>dwm</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DDE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UKUI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>无</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>141</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Libreoffice</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>151</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chromium</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>40</y>
+        <width>221</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>VirtualBox</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>内存双通道</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>70</y>
+        <width>141</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>独立显卡</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_6">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>70</y>
+        <width>141</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>固态磁盘</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输入预算</string>
+    </property>
+   </widget>
+   <zorder>scrollArea</zorder>
+   <zorder>horizontalSlider</zorder>
+   <zorder>label</zorder>
+   <zorder>scrollArea_2</zorder>
+   <zorder>label_5</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
